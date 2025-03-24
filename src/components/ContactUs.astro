@@ -1,0 +1,47 @@
+---
+import LayoutSection from "@/layouts/LayoutSection.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<LayoutSection sectionClass="pt-[88px]" wrapperClass="min-h-fit">
+  <div class="py-8 px-4 flex justify-center items-center flex-col">
+    <h2 class="text-5xl mb-8 tracking-tight font-extrabold text-black">
+      Contactanos
+    </h2>
+
+    <ul class="grid gap-4">
+      <li>
+        <a
+          href="mailto: info@dojogekido.com"
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition-all hover:bg-red-50 hover:border-red-300 flex flex-col items-center"
+        >
+          <Icon name="mail" class="size-8" />
+
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+            info@dojogekido.com
+          </h5>
+        </a>
+      </li>
+      <li>
+        <a
+          href="/#"
+          class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow transition-all hover:bg-red-50 hover:border-red-300 flex flex-col items-center"
+        >
+          <Icon name="whatsapp" class="size-8" />
+
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+            (+58)4121112233
+          </h5>
+        </a>
+      </li>
+
+      <p class="mb-2 font-light text-gray-700 text-lg text-center">
+        <a
+          href="/contacto"
+          class="font-medium text-red-300 hover:text-red-500 hover:underline"
+          >O dejanos un mensaje...</a
+        >
+      </p>
+    </ul>
+  </div>
+</LayoutSection>

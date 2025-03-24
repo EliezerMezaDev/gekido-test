@@ -1,0 +1,43 @@
+---
+import { Icon } from "astro-icon/components";
+
+import LayoutSection from "@/layouts/LayoutSection.astro";
+
+const socialNetworks: {
+  label: string;
+  url: string;
+  icon: string;
+  hoverClass: string;
+}[] = [
+  {
+    label: "@gekidokan",
+    url: "https://www.instagram.com/gekidokan?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    icon: "instagram",
+    hoverClass: "transition hover:text-[#dd2a7b]",
+  },
+];
+---
+
+<LayoutSection sectionClass="pt-[88px]" wrapperClass="min-h-fit">
+  <div class="py-8 px-4 flex justify-center items-center flex-col">
+    <h2 class="text-5xl tracking-tight font-extrabold text-black">Siguenos</h2>
+
+    <ul class="flex flex-col md:flex-row">
+      {
+        socialNetworks.map((s) => (
+          <li class="px-8 py-12">
+            <a
+              href={s.url}
+              class={`flex justify-center items-center flex-col text-center text-lg ${s.hoverClass}`}
+              target="_blank"
+            >
+              <Icon name={s.icon} class="size-28" />
+
+              {s.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</LayoutSection>
