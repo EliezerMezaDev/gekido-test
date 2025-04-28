@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+* {
+  font-family: system-ui, sans-serif;
+}
+
+*::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
