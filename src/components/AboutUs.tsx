@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 //? layouts
 import Section from "./layouts/Section";
 
@@ -33,12 +35,12 @@ const AboutUs = () => {
           </p>
           <p className="mb-2 font-light text-gray-700 text-lg">
             En cuanto al Kobudo,{" "}
-            <a
-              href="/nosotros"
+            <Link
+              to="/nosotros"
               className="font-medium text- dark:text-red-500 hover:underline"
             >
               Ver mas...
-            </a>
+            </Link>
           </p>
         </div>
         <div className="md:max-w-[400px] flex flex-col items-center md:justify-start">
